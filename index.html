@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuantumApps — Fast App Development</title>
+  <meta name="description" content="QuantumApps builds high‑performance apps faster than anyone else. End‑to‑end mobile and web development done right." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10;--panel:#121318;--muted:#191b22;--text:#e6e7eb;--sub:#a8acb8;--brand:#4f8cff;--brand-2:#6fffe9;--ok:#5bd27a;--warn:#f2c94c;
+      --ring: 0 0 0 3px rgba(79,140,255,.25)
+    }
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial; background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border:1px solid #2a2e39;background:linear-gradient(180deg,#1a1d25,#141720);color:var(--text);padding:.85rem 1.1rem;border-radius:14px;font-weight:600;cursor:pointer}
+    .btn.primary{background:linear-gradient(180deg,var(--brand),#3a72df);border-color:#2d64d0;color:white}
+    .btn:hover{filter:brightness(1.1)}
+    .nav{position:sticky;top:0;background:rgba(11,12,16,.9);backdrop-filter:blur(10px);border-bottom:1px solid #1a1d25;z-index:50}
+    .nav .row{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    .nav a.brand{font-weight:800;color:white;letter-spacing:.3px}
+    .hero{padding:6rem 0 3rem;text-align:center;background:radial-gradient(1200px 450px at 50% -10%, rgba(79,140,255,.15), rgba(0,0,0,0));}
+    .hero h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.1;margin:.6rem 0}
+    .hero p{color:var(--sub);font-size:1.1rem;max-width:700px;margin:0 auto}
+    .cta{margin-top:1.5rem;display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap}
+    .features{padding:3rem 0}
+    .grid{display:grid;gap:1.2rem}
+    .features .grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .card{background:var(--panel);border:1px solid #1a1d25;border-radius:18px;padding:1.3rem}
+    .card h3{margin:.2rem 0 .5rem;font-size:1.1rem}
+    .muted{color:var(--sub)}
+    .section{padding:3rem 0;border-top:1px solid #1a1d25}
+    .two-col{display:grid;grid-template-columns:1.2fr .8fr;gap:1.5rem}
+    @media(max-width:900px){.two-col{grid-template-columns:1fr}}
+    .contact form{display:grid;gap:.8rem}
+    .input{background:#0f1117;border:1px solid #1a1d25;border-radius:12px;padding:.9rem;color:var(--text)}
+    .footer{padding:2rem 0;color:#8b90a0;font-size:.95rem;border-top:1px solid #1a1d25;text-align:center}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container row">
+      <a href="#" class="brand">QuantumApps</a>
+      <nav class="links" style="display:flex;gap:1rem">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>QuantumApps — Best & Fastest App Development</h1>
+      <p>We build modern mobile and web apps that perform flawlessly and deliver results fast. From idea to launch — faster, cleaner, smarter.</p>
+      <div class="cta">
+        <a href="#contact" class="btn primary">Get a Quote</a>
+        <a href="#features" class="btn">See Features</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features container">
+    <div class="grid">
+      <div class="card">
+        <h3>Lightning-fast delivery</h3>
+        <p class="muted">We design, develop, and deploy your app in record time without compromising quality.</p>
+      </div>
+      <div class="card">
+        <h3>Cross-platform excellence</h3>
+        <p class="muted">One codebase for iOS, Android, and web — consistent performance everywhere.</p>
+      </div>
+      <div class="card">
+        <h3>Clean, scalable code</h3>
+        <p class="muted">Maintainable architecture and solid engineering from day one.</p>
+      </div>
+      <div class="card">
+        <h3>Transparent pricing</h3>
+        <p class="muted">No hidden fees. You only pay for what truly moves your project forward.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div>
+        <h2>About QuantumApps</h2>
+        <p class="muted">We are a team of passionate engineers focused on delivering top‑tier digital products — mobile apps, dashboards, and enterprise platforms. Our development process is built for speed, precision, and measurable ROI.</p>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Quick facts</h3>
+          <ul class="muted">
+            <li>Delivery time: 2–4 weeks</li>
+            <li>Client satisfaction: 98%</li>
+            <li>Projects launched: 120+</li>
+            <li>Support: 24/7</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container two-col">
+      <div>
+        <h2>Contact QuantumApps</h2>
+        <p class="muted">Let’s talk about your next app idea. Drop us a message and we’ll reply within 24 hours.</p>
+        <form action="mailto:info.quantum.apps@gmail.com" method="post" enctype="text/plain">
+          <input class="input" type="text" name="name" placeholder="Your name" required />
+          <input class="input" type="email" name="email" placeholder="Your email" required />
+          <textarea class="input" name="message" rows="5" placeholder="Your message"></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:info.quantum.apps@gmail.com">info.quantum.apps@gmail.com</a></p>
+          <h3>Office</h3>
+          <p class="muted">Remote‑first team based in Europe.</p>
+          <h3>Working hours</h3>
+          <p class="muted">Mon–Fri, 9:00–18:00 CET</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="y"></span> QuantumApps — Building apps that perform.
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
